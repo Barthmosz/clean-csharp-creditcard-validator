@@ -22,5 +22,11 @@ namespace Clean.CreditCardValidator.Test
         {
             Assert.That(CreditCardValidator.Validate("1234123412341234"), Is.EqualTo(true));
         }
+
+        [Test, Description("should return true if a valid credit card is provided with spaces")]
+        public void CreditCardValidator_ValidCreditCard_WithSpaces_ReturnsTrue()
+        {
+            Assert.That(CreditCardValidator.Validate("1234 1234 1234 1234"), Is.EqualTo(true));
+        }
     }
 }
