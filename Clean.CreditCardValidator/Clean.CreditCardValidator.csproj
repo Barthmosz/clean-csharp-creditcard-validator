@@ -3,6 +3,28 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <Title>Clean Credit Card Validator</Title>
+    <Version>1.0.0</Version>
+    <Authors>Barthmosz</Authors>
+    <Description>A simple and clean credit card validator.</Description>
+    <PackageProjectUrl>https://github.com/Barthmosz/clean-csharp-creditcard-validator</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Barthmosz/clean-csharp-creditcard-validator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Credit;Card;Credit-Card;Validator;Validation</PackageTags>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
