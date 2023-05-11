@@ -7,7 +7,7 @@ namespace Clean.CreditCardValidator
         public static bool Validate(string creditCard)
         {
             string creditCardRegex = "^\\d{16}";
-            return Regex.IsMatch(creditCard, creditCardRegex);
+            return Regex.IsMatch(creditCard.Replace(" ", ""), creditCardRegex);
         }
     }
 }
